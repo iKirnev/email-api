@@ -1,0 +1,35 @@
+Started GET "/" for 127.0.0.1 at 2018-11-29 23:11:19 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivan/.rvm/gems/ruby-2.5.3/gems/railties-5.2.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivan/.rvm/gems/ruby-2.5.3/gems/railties-5.2.1.1/lib/rails/templates/rails/welcome/index.html.erb (4.4ms)
+Completed 200 OK in 21ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-29 23:13:09 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivan/.rvm/gems/ruby-2.5.3/gems/railties-5.2.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivan/.rvm/gems/ruby-2.5.3/gems/railties-5.2.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 17ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-29 23:13:09 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivan/.rvm/gems/ruby-2.5.3/gems/railties-5.2.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivan/.rvm/gems/ruby-2.5.3/gems/railties-5.2.1.1/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-29 23:13:10 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ivan/.rvm/gems/ruby-2.5.3/gems/railties-5.2.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ivan/.rvm/gems/ruby-2.5.3/gems/railties-5.2.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-29 23:13:57 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 573ms (Views: 569.2ms | ActiveRecord: 0.0ms)
+
+
