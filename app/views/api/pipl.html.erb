@@ -1,0 +1,55 @@
+<style type="text/css">
+	o-demo-form input[type=email], .o-demo-form input[type=text] {
+    border: 1px solid #dae1ea;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: italic;
+    height: 46px;
+}
+</style>
+<br>
+<section class="container">
+<form id="demo-form" class="o-demo-form">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <input name="email" title="Personal or work email address." data-tooltip="true" class="form-control s-icon-email" type="text" placeholder="Email">
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <input name="phone" title="Current or past phone number. Mobile, home or work." data-tooltip="true" class="form-control s-icon-phone" type="text" placeholder="Phone">
+                </div>
+                <div class="col-sm-4 col-xs-12 ">
+                    <input name="first_name" data-tooltip="true" class="form-control s-icon-name" type="text" placeholder="First Name" title="Current or past name.">
+                </div>
+                <div class="col-sm-4 col-xs-12 ">
+                    <input name="last_name" data-tooltip="true" class="form-control s-icon-name" type="text" placeholder="Last Name" title="Current or past name.">
+                </div>
+                <div class="col-sm-4 col-xs-12 ">
+                    <input name="middle_name" data-tooltip="true" class="form-control s-icon-name" type="text" placeholder="Middle Name" title="Current or past name.">
+                </div>
+                <div class="col-sm-4 col-xs-12 ">
+                    <input name="country" data-tooltip="true" class="form-control s-icon-address" type="text" placeholder="Country code" title="2 letter abbreviation of current or past country.">
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <input name="state" data-tooltip="true" class="form-control s-icon-address" type="text" placeholder="State code" title="Abbreviation of current or past state.">
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <input name="city" data-tooltip="true" class="form-control s-icon-address" type="text" placeholder="City" title="Current or past city of residence.">
+                </div>
+
+                <div class="col-sm-6 col-xs-12">
+                    <input name="username" title="Screen name, handle, or username." data-tooltip="true" class="form-control s-icon-username" type="text" placeholder="Username">
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <input name="age" title="An age, or age range (e.g. 25-30)." data-tooltip="true" class="form-control s-icon-age" type="text" placeholder="Age">
+                </div>
+                <div class="col-xs-12">
+                    <input name="search_pointer" title="Copy-paste here any search pointer provided in the API response" data-tooltip="true" class="form-control s-search-pointer" type="text" placeholder="Search Pointer">
+                </div>
+            </div>
+			<button type="submit" class="btn btn-primary">Search</button><br><br>
+        </form>
+
+<!--%= @result['query']['emails'][0]['address']%-->
+<pre><%= @result.to_yaml if @result%></pre>
+</section>
