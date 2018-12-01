@@ -10,41 +10,42 @@
 </style>
 <br>
 <section class="container">
+<h1>Pipl</h1>
 <form id="demo-form" class="o-demo-form">
             <div class="row">
                 <div class="col-sm-6 col-xs-12">
-                    <input name="email" title="Personal or work email address." data-tooltip="true" class="form-control s-icon-email" type="text" placeholder="Email">
+                    <input name="email" title="Personal or work email address." data-tooltip="true" class="form-control s-icon-email" type="text" placeholder="Email"  value="<%=params[:email]%>">
                 </div>
                 <div class="col-sm-6 col-xs-12">
-                    <input name="phone" title="Current or past phone number. Mobile, home or work." data-tooltip="true" class="form-control s-icon-phone" type="text" placeholder="Phone">
+                    <input name="phone" title="Current or past phone number. Mobile, home or work." data-tooltip="true" class="form-control s-icon-phone" type="text" placeholder="Phone"  value="<%=params[:phone]%>">
                 </div>
                 <div class="col-sm-4 col-xs-12 ">
-                    <input name="first_name" data-tooltip="true" class="form-control s-icon-name" type="text" placeholder="First Name" title="Current or past name.">
+                    <input name="first_name" data-tooltip="true" class="form-control s-icon-name" type="text" placeholder="First Name" title="Current or past name."  value="<%=params[:first_name]%>">
                 </div>
                 <div class="col-sm-4 col-xs-12 ">
-                    <input name="last_name" data-tooltip="true" class="form-control s-icon-name" type="text" placeholder="Last Name" title="Current or past name.">
+                    <input name="last_name" data-tooltip="true" class="form-control s-icon-name" type="text" placeholder="Last Name" title="Current or past name."  value="<%=params[:last_name]%>">
                 </div>
                 <div class="col-sm-4 col-xs-12 ">
-                    <input name="middle_name" data-tooltip="true" class="form-control s-icon-name" type="text" placeholder="Middle Name" title="Current or past name.">
+                    <input name="middle_name" data-tooltip="true" class="form-control s-icon-name" type="text" placeholder="Middle Name" title="Current or past name."  value="<%=params[:middle_name]%>">
                 </div>
                 <div class="col-sm-4 col-xs-12 ">
-                    <input name="country" data-tooltip="true" class="form-control s-icon-address" type="text" placeholder="Country code" title="2 letter abbreviation of current or past country.">
+                    <input name="country" data-tooltip="true" class="form-control s-icon-address" type="text" placeholder="Country code" title="2 letter abbreviation of current or past country."  value="<%=params[:country]%>">
                 </div>
                 <div class="col-sm-4 col-xs-12">
-                    <input name="state" data-tooltip="true" class="form-control s-icon-address" type="text" placeholder="State code" title="Abbreviation of current or past state.">
+                    <input name="state" data-tooltip="true" class="form-control s-icon-address" type="text" placeholder="State code" title="Abbreviation of current or past state."  value="<%=params[:state]%>">
                 </div>
                 <div class="col-sm-4 col-xs-12">
-                    <input name="city" data-tooltip="true" class="form-control s-icon-address" type="text" placeholder="City" title="Current or past city of residence.">
+                    <input name="city" data-tooltip="true" class="form-control s-icon-address" type="text" placeholder="City" title="Current or past city of residence."  value="<%=params[:city]%>">
                 </div>
 
                 <div class="col-sm-6 col-xs-12">
-                    <input name="username" title="Screen name, handle, or username." data-tooltip="true" class="form-control s-icon-username" type="text" placeholder="Username">
+                    <input name="username" title="Screen name, handle, or username." data-tooltip="true" class="form-control s-icon-username" type="text" placeholder="Username"  value="<%=params[:username]%>">
                 </div>
                 <div class="col-sm-6 col-xs-12">
-                    <input name="age" title="An age, or age range (e.g. 25-30)." data-tooltip="true" class="form-control s-icon-age" type="text" placeholder="Age">
+                    <input name="age" title="An age, or age range (e.g. 25-30)." data-tooltip="true" class="form-control s-icon-age" type="text" placeholder="Age"  value="<%=params[:age]%>">
                 </div>
                 <div class="col-xs-12">
-                    <input name="search_pointer" title="Copy-paste here any search pointer provided in the API response" data-tooltip="true" class="form-control s-search-pointer" type="text" placeholder="Search Pointer">
+                    <input name="search_pointer" title="Copy-paste here any search pointer provided in the API response" data-tooltip="true" class="form-control s-search-pointer" type="text" placeholder="Search Pointer"  value="<%=params[:search_pointer]%>">
                 </div>
             </div>
 			<button type="submit" class="btn btn-primary">Search</button><br><br>
