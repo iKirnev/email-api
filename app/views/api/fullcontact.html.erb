@@ -1,0 +1,34 @@
+<style type="text/css">
+	o-demo-form input[type=email], .o-demo-form input[type=text] {
+    border: 1px solid #dae1ea;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: italic;
+    height: 46px;
+}
+</style>
+<br>
+<section class="container">
+<form id="demo-form" class="o-demo-form" method="post">
+            <%= token_tag %> 
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <input name="email" title="Personal or work email address." data-tooltip="true" class="form-control s-icon-email" type="text" placeholder="Email" value="<%=params[:email]%>">
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <input name="phone" title="Current or past phone number. Mobile, home or work." data-tooltip="true" class="form-control s-icon-phone" type="text" placeholder="Phone"  value="<%=params[:phone]%>">
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <input name="twitter" title="Twitter" data-tooltip="true" class="form-control s-icon-phone" type="text" placeholder="Twitter" value="<%=params[:twitter]%>">
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <input name="domain" title="Domain" data-tooltip="true" class="form-control s-icon-phone" type="text" placeholder="Domain" value="<%=params[:domain]%>">
+                </div>
+            </div>
+			<button type="submit" class="btn btn-primary">Search</button><br><br>
+        </form>
+
+<!--%= @result['query']['emails'][0]['address']%-->
+<pre><%= @result.to_yaml if @result%></pre>
+</section>

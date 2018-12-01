@@ -1,6 +1,9 @@
 development:
-  pipl_key: 33s2zh3bpunkeolukz6h7dih
+  pipl_key: 
+  fullcontact_key: 
 staging:
-  pipl_key: 33s2zh3bpunkeolukz6h7dih
+  pipl_key: 
+  fullcontact_key: 
 production:
-  pipl_key: 33s2zh3bpunkeolukz6h7dih
+  pipl_key: 
+  fullcontact_key: 

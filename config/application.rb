@@ -18,11 +18,11 @@ module EmailApi
     config.before_configuration do
       env_file = Rails.root.join("config", 'environment_variables.yml').to_s
 
-      puts '============= RAILS ENV VARIABLES =============='
+      puts '============= RAILS ENV VARIABLES from config/environment_variables.yml =============='
       if File.exists?(env_file)
         YAML.load_file(env_file)[Rails.env].each do |key, value|
           ENV[key.to_s] = value
-          puts "#{key.to_s} : #{ENV[key.to_s]}"
+          puts "#{key.to_s} : #{ENV[key.to_s]}#{"<== VALUE SHOULD NOT BE EMPTY!!!" if ENV[key.to_s].blank?}"
         end
       else
         puts 'environment_variables YAML not found'
